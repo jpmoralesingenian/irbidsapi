@@ -7,60 +7,52 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using IrbidsAPI.Models;
 
-namespace IrbidsAPI.Controllers
+namespace IrbidsAPI
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class WordsController : ControllerBase
+    public class UsersController : ControllerBase
     {
         private readonly IrbidsAPIContext _context;
 
-        public WordsController(IrbidsAPIContext context)
+        public UsersController(IrbidsAPIContext context)
         {
             _context = context;
         }
 
-        // GET: api/Words
+        // GET: api/Users
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Word>>> GetWord(string Ani)
+        public async Task<ActionResult<IEnumerable<User>>> GetUser()
         {
-            if (String.IsNullOrWhiteSpace(Ani)) return await _context.Word.ToListAsync();
-            return await GetRandomWord(Ani);
-            
+            return await _context.User.ToListAsync();
         }
 
-        private async Task<ActionResult<IEnumerable<Word>>> GetRandomWord(string Ani)
-        {
-            int id = 1447 + new Random().Next() % (_context.Word.Count());
-            return await _context.Word.Where(e => e.Id == id).ToListAsync();
-        }
-
-        // GET: api/Words/5
+        // GET: api/Users/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Word>> GetWord(int id)
+        public async Task<ActionResult<User>> GetUser(int id)
         {
-            var word = await _context.Word.FindAsync(id);
+            var user = await _context.User.FindAsync(id);
 
-            if (word == null)
+            if (user == null)
             {
                 return NotFound();
             }
 
-            return word;
+            return user;
         }
 
-        // PUT: api/Words/5
+        // PUT: api/Users/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for
         // more details see https://aka.ms/RazorPagesCRUD.
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutWord(int id, Word word)
+        public async Task<IActionResult> PutUser(int id, User user)
         {
-            if (id != word.Id)
+            if (id != user.Id)
             {
                 return BadRequest();
             }
 
-            _context.Entry(word).State = EntityState.Modified;
+            _context.Entry(user).State = EntityState.Modified;
 
             try
             {
@@ -68,7 +60,7 @@ namespace IrbidsAPI.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!WordExists(id))
+                if (!UserExists(id))
                 {
                     return NotFound();
                 }
@@ -81,37 +73,37 @@ namespace IrbidsAPI.Controllers
             return NoContent();
         }
 
-        // POST: api/Words
+        // POST: api/Users
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for
         // more details see https://aka.ms/RazorPagesCRUD.
         [HttpPost]
-        public async Task<ActionResult<Word>> PostWord(Word word)
+        public async Task<ActionResult<User>> PostUser(User user)
         {
-            _context.Word.Add(word);
+            _context.User.Add(user);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetWord", new { id = word.Id }, word);
+            return CreatedAtAction("GetUser", new { id = user.Id }, user);
         }
 
-        // DELETE: api/Words/5
+        // DELETE: api/Users/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult<Word>> DeleteWord(int id)
+        public async Task<ActionResult<User>> DeleteUser(int id)
         {
-            var word = await _context.Word.FindAsync(id);
-            if (word == null)
+            var user = await _context.User.FindAsync(id);
+            if (user == null)
             {
                 return NotFound();
             }
 
-            _context.Word.Remove(word);
+            _context.User.Remove(user);
             await _context.SaveChangesAsync();
 
-            return word;
+            return user;
         }
 
-        private bool WordExists(int id)
+        private bool UserExists(int id)
         {
-            return _context.Word.Any(e => e.Id == id);
+            return _context.User.Any(e => e.Id == id);
         }
     }
 }

@@ -79,6 +79,8 @@ namespace IrbidsAPI.Controllers
         [HttpPost]
         public async Task<ActionResult<Attempt>> PostAttempt(Attempt attempt)
         {
+            //Check if the user exists, if not, create her
+            //if(_context.User.Where(x => x.Ani == ))
             _context.Attempt.Add(attempt);
             await _context.SaveChangesAsync();
 

@@ -17,5 +17,7 @@ namespace IrbidsAPI.Models
         public DbSet<IrbidsAPI.Models.Word> Word { get; set; }
 
         public DbSet<IrbidsAPI.Models.Attempt> Attempt { get; set; }
+
+        public DbSet<IrbidsAPI.Models.User> User { get; set; }
     }
 }

@@ -4,14 +4,16 @@ using IrbidsAPI.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace IrbidsAPI.Migrations
 {
     [DbContext(typeof(IrbidsAPIContext))]
-    partial class IrbidsAPIContextModelSnapshot : ModelSnapshot
+    [Migration("20200201180433_attempt-count")]
+    partial class attemptcount
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

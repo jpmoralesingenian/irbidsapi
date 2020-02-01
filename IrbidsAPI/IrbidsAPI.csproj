@@ -6,6 +6,7 @@
     <Authors>Marlon Acosta, Carlos Daza, Juan Pablo Morales, Marco Castro</Authors>
     <Company>Ingenian Software, Infotransgroup</Company>
     <Description>I read but I don't speak.</Description>
+    <StartupObject></StartupObject>
   </PropertyGroup>
 
   <ItemGroup>
@@ -16,6 +17,7 @@
     </PackageReference>
     <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="3.0.0" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
   </ItemGroup>
 
 </Project>

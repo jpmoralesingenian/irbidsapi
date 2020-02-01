@@ -20,5 +20,8 @@ namespace IrbidsAPI.Models
 
         [Required]
         public float Score { get; set; }
+
+        [Required]
+        public int AttemptCount { get; set; }
     }
 }
