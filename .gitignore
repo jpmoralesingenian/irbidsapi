@@ -338,3 +338,4 @@ ASALocalRun/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
+/IrbidsAPI/.IrbidsAPI.csproj.swp

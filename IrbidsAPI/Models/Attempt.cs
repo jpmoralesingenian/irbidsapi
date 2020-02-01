@@ -24,5 +24,9 @@ namespace IrbidsAPI.Models
         [Required]
         public virtual Word Word { get; set; }
 
+        [StringLength(200)]
+        [DataType(DataType.Url)]
+        public String RecordedURL { get; set; }
+
     }
 }

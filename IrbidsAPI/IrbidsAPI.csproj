@@ -2,6 +2,10 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Marlon Acosta, Carlos Daza, Juan Pablo Morales, Marco Castro</Authors>
+    <Company>Ingenian Software, Infotransgroup</Company>
+    <Description>I read but I don't speak.</Description>
   </PropertyGroup>
 
   <ItemGroup>
