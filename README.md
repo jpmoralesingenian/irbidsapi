@@ -32,7 +32,26 @@ The team mebers are:
 
 The whole voice flow is made using the resources provided by Avaya and available at https://cloud.zang.io This means the phone number used, and the voice routing and the voice recording are provided by Avaya.
 
+### Other willing and unwilling sponsors
+
+Here is a shoutout to the resources that made this hack possible: 
+
+ * Thanks to IBM Watson, for the AI logic to check the accuyracy of a phrase https://dataplatform.cloud.ibm.com/docs/content/wsj/getting-started/wdp-apis.html
+ * Thanks to http://www.englishspeak.com for providing the phrases and the audios that were srapped off their website to be included on the database
+ * Thanks to Infotrans for the hosting of the database and the services and for Marco's and Carlos' time
+ * Thanks to [Ingenian Software](https://www.ingenian.com) for the DNS services, the pizza, the money for the minutes needed to test and for Marlon's and Juan Pablo's time
+ 
 ## Prize category
 
 This hack is a contestant in the **education** category
 
+## Where the goods are
+
+### Code
+* The Github repository for the website https://github.com/cdazamolina/IRBIDS
+* The Github repository for the API https://github.com/jpmoralesingenian/irbidsapi
+
+## Application
+* The app on a demo (will work for as long as it has money) +1 916 860 1204
+* The website for the game http://irbids.ingenian.com
+* The website for the API http://irbidsapi.ingenian.com
