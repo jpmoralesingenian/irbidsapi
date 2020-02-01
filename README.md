@@ -19,10 +19,14 @@ There is a voice app that you can call at +1 916 860 1204. The app will ask you 
 
 This hack is collaboration effort between two companies, based in Bogotá, Colombia (South America). 
 The team mebers are: 
-**Marco Castro** [Infotrans]: The one with the idea of participating on the hackathon, he is the one that got the people together, and is the one that represent the team on-site at Phoenix.
-**Carlos Daza** [Infotrans]: He created the gameification component and the website that can be accessed at http://irbids.ingenian.com
-**Marlon Acosta** [Ingenian]: He is the zang wizard, he created the call flow and the messages that appear on the phone call. 
-**Juan Pablo Morales** [Ingenian]: He created the services that the Zang callflow uses, wrote the data to a database and invoked IBM's Watson to read the audio saved by zang to test the accuracy of what is being said
+
+ * **Marco Castro** [Infotrans]: The one with the idea of participating on the hackathon, he is the one that got the people together, and is the one that represent the team on-site at Phoenix.
+ 
+ * **Carlos Daza** [Infotrans]: He created the gameification component and the website that can be accessed at http://irbids.ingenian.com
+
+ * **Marlon Acosta** [Ingenian]: He is the zang wizard, he created the call flow and the messages that appear on the phone call. 
+
+ * **Juan Pablo Morales** [Ingenian]: He created the services that the Zang callflow uses, wrote the data to a database and invoked IBM's Watson to read the audio saved by zang to test the accuracy of what is being said
 
 ## Sponsor's resources
 
