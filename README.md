@@ -1,14 +1,14 @@
 # IRBIDS
 # I read but I don't speak
 
-This is our entry for the TADHack-mini Phoenix with Avaya ENGAGE, that took place between Feb 1 and Feb 2, 2020 for more informationon the Hack please check https://tadhack.com/2020/mini-phoenix/
+This is our entry for the TADHack-mini Phoenix with Avaya ENGAGE, that took place between Feb 1 and Feb 2, 2020 for more information on the Hackathon please check https://tadhack.com/2020/mini-phoenix/
 
 ## The problem
 
 When non-natives try to learn a second language, one of the biggest barriers for it is shyness and self-conciousness and it is very common 
 to hear, when talking about a second language that "I can read it, but I don't speak it", or in spanish "Lo entiendo pero no lo hablo".
 
-This hack tries to address this by creating an engaging way to learn english for non-natives, by using the phone. 
+This hack tries to address this by creating an engaging way to learn english for non-natives. It attempts to reduce the self consciousness by providing an automated way of grading, and by using the phone. 
 
 ## The Hack
 
