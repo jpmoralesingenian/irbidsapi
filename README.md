@@ -38,7 +38,7 @@ Here is a shoutout to the resources that made this hack possible:
 
  * Thanks to IBM Watson, for the AI logic to check the accuyracy of a phrase https://dataplatform.cloud.ibm.com/docs/content/wsj/getting-started/wdp-apis.html
  * Thanks to http://www.englishspeak.com for providing the phrases and the audios that were srapped off their website to be included on the database
- * Thanks to Infotrans for the hosting of the database and the services and for Marco's and Carlos' time
+ * Thanks to [Infotransgroup] (https://infotransgroup.com/es/hablemos/colombia/) for the hosting of the database and the services and for Marco's and Carlos' time
  * Thanks to [Ingenian Software](https://www.ingenian.com) for the DNS services, the pizza, the money for the minutes needed to test and for Marlon's and Juan Pablo's time
  
 ## Prize category
