@@ -53,10 +53,15 @@ namespace IrbidsAPI.Controllers
                 ],
                "result_index": 0
             }*/
-            Console.WriteLine(jsonString);
+            
             JToken token = json.SelectToken("$.results[0].alternatives[0].confidence");
-            Console.WriteLine(token.Value<float>());
-            return token.Value<float>();
+            if (token!=null && token.HasValues)
+            {
+                return token.Value<float>();
+            } else
+            {
+                return 0;
+            }
         }
         /*
         public static void Main(string[] args) {
